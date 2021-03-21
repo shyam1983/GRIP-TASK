@@ -1,0 +1,26 @@
+{% extends "layout.html"%}
+{% block body %}
+<div class="container">
+   <h1 class="text-center" style="color:rgb(5, 5, 5);">ENTER YOUR DETAIL FOR DONATION</h1>
+    <form action="/pay" method="POST">
+      <style>#form{color:rgb(178, 144, 32);}</style>
+      <div class="form-group">   
+         NAME:<input type="text" class="form-control" required name="name" id="" placeholder="NAME" /></div>
+      <div class="form-group">
+         PURPOSE:<input type="text" class="form-control" required name="purpose" id="" placeholder="PURPOSE" />
+        </div>
+      <div class="form-group">
+         EMAIL ID:<input type="email" class="form-control" required name="email" id="" placeholder="EMAIL" />
+      </div>
+      <div class="form-group"> 
+         AMOUNT:<input type="number" class="form-control" required name="amount" id="" placeholder="AMOUNT"
+          />
+        </div>
+      <div class="form-group">
+          <button class="btn btn-success btn-block">
+              PAY
+          </button>
+      </div>
+    </form>
+</div>
+{% endblock %}
